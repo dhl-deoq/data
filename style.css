@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #111;
+    color: #eee;
+}
+header {
+    padding: 10px;
+    background: #222;
+    text-align: center;
+}
+#auth, #chat {
+    padding: 20px;
+}
+input, button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+}
+input {
+    background: #222;
+    color: #eee;
+}
+button {
+    background: #444;
+    color: #eee;
+    cursor: pointer;
+}
+button:hover {
+    background: #666;
+}
+#chat {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+#channels {
+    width: 200px;
+    background: #1a1a1a;
+    padding: 10px;
+    overflow-y: auto;
+}
+#channels ul {
+    list-style: none;
+    padding: 0;
+}
+#channels li {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+#channels li:hover {
+    background: #333;
+}
+#messages {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#messageList {
+    flex: 1;
+    overflow-y: auto;
+    background: #111;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+}
