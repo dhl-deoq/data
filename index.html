@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Night Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Night Chat</h1>
+</header>
+
+<div id="auth">
+    <h2>Вхід / Реєстрація</h2>
+    <input id="username" placeholder="Логін">
+    <input id="password" type="password" placeholder="Пароль">
+    <button id="loginBtn">Увійти</button>
+    <button id="registerBtn">Зареєструватися</button>
+</div>
+
+<div id="chat" style="display:none;">
+    <aside id="channels">
+        <h3>Канали</h3>
+        <ul id="channelList"></ul>
+        <input id="newChannelName" placeholder="Назва нового каналу">
+        <button id="createChannelBtn">Створити канал</button>
+    </aside>
+    <main id="messages">
+        <h3 id="channelTitle">Виберіть канал</h3>
+        <div id="messageList"></div>
+        <input id="msgText" placeholder="Напишіть повідомлення...">
+        <button id="sendMsgBtn">Відправити</button>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
